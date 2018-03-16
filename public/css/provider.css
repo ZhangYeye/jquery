@@ -1,125 +1,107 @@
-/* line 1, provider.less */
-#header {
+header {
   width: 100%;
   height: 60px;
-  position: fixed;
-  top: 0;
   background: #ffffff;
   border-bottom: #121212;
   box-shadow: 0px 0px 5px #ccc;
 }
-/* line 9, provider.less */
-#header .container {
+header .container {
   width: 1200px;
   height: 100% ;
   padding: 10px 25px 10px  20px;
   margin: 0 auto;
 }
-/* line 14, provider.less */
-#header .container .nav-left {
+header .container .nav-left {
   float: left;
 }
-/* line 17, provider.less */
-#header .container .nav-right {
+header .container .nav-right {
   float: right;
 }
-/* line 19, provider.less */
-#header .container .nav-right .nav {
+header .container .nav-right .nav {
   width: 100%;
   line-height: 20px;
   vertical-align: middle;
 }
-/* line 23, provider.less */
-#header .container .nav-right .nav li {
+header .container .nav-right .nav li {
   display: inline-block;
 }
-/* line 26, provider.less */
-#header .container .nav-right .nav li > a {
+header .container .nav-right .nav li > a {
   color: #121212;
   font-size: 16px;
   font-weight: bold;
 }
-/* line 32, provider.less */
-#header .container .nav-right .nav .nav-list {
+header .container .nav-right .nav .nav-list {
   font-weight: 700;
   font-size: 16px;
   text-align: center ;
   margin: 10px 15px;
 }
-/* line 38, provider.less */
-#header .container .nav-right .nav .nav-list > a:hover {
+header .container .nav-right .nav .nav-list > a:hover {
   color: #e94840;
 }
-/* line 41, provider.less */
-#header .container .nav-right .nav #position {
+header .container .nav-right .nav #position {
   margin-right: 40px;
 }
-/* line 43, provider.less */
-#header .container .nav-right .nav #position span {
+header .container .nav-right .nav #position span {
   font-weight: bold;
 }
-/* line 46, provider.less */
-#header .container .nav-right .nav #position .address-logo {
+header .container .nav-right .nav #position .address-logo {
   vertical-align: middle;
 }
-/* line 51, provider.less */
-#header .container .nav-right .nav .active > a {
+header .container .nav-right .nav .active > a {
   color: #e94840;
 }
-/* line 55, provider.less */
-#header .container .nav-right .nav .shanghu-login {
+header .container .nav-right .nav .shanghu-login {
   background: #e94840;
   padding: 5px;
   border-radius: 5px;
 }
-/* line 59, provider.less */
-#header .container .nav-right .nav .shanghu-login > a {
+header .container .nav-right .nav .shanghu-login > a {
   color: #fff;
   font-weight: bold;
 }
-/* line 69, provider.less */
+.header {
+  position: fixed;
+  top: 0;
+  animation: play 0.5s;
+}
+@keyframes play {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .service-container {
   width: 100%;
   height: 100%;
   margin-top: 60px;
 }
-/* line 73, provider.less */
 .service-container .service-center {
   width: 1200px;
   margin: 0 auto;
   overflow: hidden;
 }
-/* line 77, provider.less */
 .service-container .service-center h2 {
   line-height: 85px;
   font-size: 18px;
   font-weight: 800;
 }
-/* line 82, provider.less */
 .service-container .service-center .service-left {
   width: 960px;
   height: 100%;
   float: left;
   margin-bottom: 50px;
 }
-/* line 88, provider.less */
 .service-container .service-center .service-left .service-tab {
   height: 100%;
   width: 960px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-/* line 93, provider.less */
 .service-container .service-center .service-left .service-tab .tab-item {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   width: 209px;
   height: 300px;
   border: 1px solid #eaeaea;
@@ -129,12 +111,10 @@
   background: #fff;
   cursor: pointer;
 }
-/* line 104, provider.less */
 .service-container .service-center .service-left .service-tab .tab-item > img {
   width: 210px;
   height: 210px;
 }
-/* line 108, provider.less */
 .service-container .service-center .service-left .service-tab .tab-item > p {
   font-size: 12px;
   color: #929292;
@@ -142,31 +122,25 @@
   line-height: 29px;
   margin-top: 15px;
 }
-/* line 114, provider.less */
 .service-container .service-center .service-left .service-tab .tab-item > p > b {
   font-size: 16px;
   font-weight: 700;
   vertical-align: middle;
 }
-/* line 119, provider.less */
 .service-container .service-center .service-left .service-tab .tab-item > p > img {
   vertical-align: middle;
 }
-/* line 122, provider.less */
 .service-container .service-center .service-left .service-tab .tab-item > p span {
   float: right;
 }
-/* line 127, provider.less */
 .service-container .service-center .service-left .service-tab .tab-item:hover {
   box-shadow: 1px 0 15px #ccc;
 }
-/* line 132, provider.less */
 .service-container .service-center .service-right {
   float: right;
   width: 230px;
   margin-left: 0px;
 }
-/* line 138, provider.less */
 .service-container .service-center .service-right > img {
   display: block;
   width: 230px;
@@ -174,7 +148,6 @@
   vertical-align: middle;
   margin-left: -10px;
 }
-/* line 145, provider.less */
 .service-container .service-center .service-right .erweima {
   width: 230px;
   background-image: url("../images2/tuijianfuwushang_06.jpg");
@@ -182,19 +155,16 @@
   margin-left: -10px;
   height: 300px;
 }
-/* line 151, provider.less */
 .service-container .service-center .service-right .erweima img {
   margin: 50px 0 0 50px;
   width: 130px;
 }
-/* line 158, provider.less */
 .service-container .service-center .more {
   width: 100%;
   text-align: center;
   height: 152px;
   clear: both;
 }
-/* line 163, provider.less */
 .service-container .service-center .more .btn {
   width: 200px;
   height: 50px;
@@ -208,11 +178,9 @@
   color: #b1b1b1;
   cursor: pointer;
 }
-/* line 175, provider.less */
 .service-container .service-center .more .btn img {
   margin-left: 10px ;
 }
-/* line 182, provider.less */
 .service-container .safeguard {
   text-align: center;
   width: 1200px;
@@ -220,18 +188,15 @@
   padding-top: 60px;
   background: #fff;
 }
-/* line 188, provider.less */
 .service-container .safeguard h2 {
   font-size: 30px;
   font-family: "微软雅黑";
   font-weight: 800;
 }
-/* line 192, provider.less */
 .service-container .safeguard h2 span {
   color: #fb474f;
   font-weight: 800;
 }
-/* line 197, provider.less */
 .service-container .safeguard p {
   font-size: 20px;
   color: #3d3838;
@@ -239,52 +204,44 @@
   font-weight: 800;
   margin: 15px 0;
 }
-/* line 205, provider.less */
 .service-container .safe-list {
   text-align: center;
   width: 1200px;
   margin: 0 auto;
 }
-/* line 209, provider.less */
 .service-container .safe-list ul {
   width: 420px;
   margin: 0 auto ;
 }
-/* line 212, provider.less */
 .service-container .safe-list ul li {
   display: inline-block;
   color: #1d1515;
   font-size: 18px;
   margin: 0 10px;
 }
-/* line 220, provider.less */
 .service-container .footer {
   width: 1200px;
   text-align: center;
   padding: 0 20px;
   margin: 0 auto;
 }
-/* line 226, provider.less */
 .service-container .footer dl {
   padding-top: 50px;
   height: 170px;
   background: #fff;
   overflow: hidden;
 }
-/* line 232, provider.less */
 .service-container .footer dl dt {
   float: left;
   font-family: " 微软雅黑";
   font-size: 18px;
 }
-/* line 237, provider.less */
 .service-container .footer dl dd {
   margin-left: 30px;
   width: 1090px;
   line-height: 30px;
   float: left;
 }
-/* line 242, provider.less */
 .service-container .footer dl dd a {
   font-size: 16px;
   color: #898989;
@@ -295,7 +252,6 @@
   cursor: pointer;
   font-family: "微软雅黑";
 }
-/* line 255, provider.less */
 .service-container .partner {
   width: 1200px;
   text-align: center;
@@ -303,14 +259,12 @@
   margin: 0 auto;
   overflow: hidden;
 }
-/* line 261, provider.less */
 .service-container .partner h2 {
   padding-top: 50px;
   float: left;
   font-family: " 微软雅黑";
   font-size: 18px;
 }
-/* line 267, provider.less */
 .service-container .partner ul {
   padding-top: 30px;
   width: 1200px;
@@ -319,15 +273,9 @@
   overflow: hidden;
   float: left;
   margin: 0 20px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-/* line 278, provider.less */
 .service-container .partner ul li {
   float: left;
   height: 60px;
@@ -335,17 +283,12 @@
   line-height: 55px;
   margin: 5px;
   padding: 6px;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
-/* line 286, provider.less */
 .service-container .partner ul li img {
   width: 100px;
   height: 55px;
 }
-/* line 293, provider.less */
 .service-container .beian {
   width: 1200px;
   margin: 0 auto;
@@ -353,7 +296,6 @@
   height: 40px;
   line-height: 40px;
 }
-/* line 299, provider.less */
 .service-container .beian p {
   color: #898989;
   font-size: 14px;
