@@ -1,7 +1,85 @@
+header {
+  width: 100%;
+  height: 60px;
+  z-index: 40;
+  background: #ffffff;
+  border-bottom: #121212;
+  box-shadow: 0px 0px 5px #ccc;
+}
+header .container {
+  width: 1200px;
+  height: 100% ;
+  padding: 10px 25px 10px  20px;
+  margin: 0 auto;
+}
+header .container .nav-left {
+  float: left;
+}
+header .container .nav-right {
+  float: right;
+}
+header .container .nav-right .nav {
+  width: 100%;
+  line-height: 20px;
+  vertical-align: middle;
+}
+header .container .nav-right .nav li {
+  display: inline-block;
+}
+header .container .nav-right .nav li > a {
+  color: #121212;
+  font-size: 16px;
+  font-weight: bold;
+}
+header .container .nav-right .nav li > a #city:hover {
+  color: #e94840;
+}
+header .container .nav-right .nav .nav-list {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center ;
+  margin: 10px 15px;
+}
+header .container .nav-right .nav .nav-list > a:hover {
+  color: #e94840;
+}
+header .container .nav-right .nav #position {
+  margin-right: 40px;
+}
+header .container .nav-right .nav #position span {
+  font-weight: bold;
+}
+header .container .nav-right .nav #position .address-logo {
+  vertical-align: middle;
+}
+header .container .nav-right .nav .active > a {
+  color: #e94840;
+}
+header .container .nav-right .nav .shanghu-login {
+  background: #e94840;
+  padding: 5px;
+  border-radius: 5px;
+}
+header .container .nav-right .nav .shanghu-login > a {
+  color: #fff;
+  font-weight: bold;
+}
+.header {
+  position: fixed;
+  top: 0;
+  animation: play 0.5s;
+}
+@keyframes play {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .service-container {
   width: 100%;
   height: 100%;
-  margin-top: 60px;
 }
 .service-container .service-title {
   height: 140px;
@@ -61,7 +139,7 @@
   position: absolute;
   width: 100%;
   height: 40px;
-  margin-left: 20px;
+  margin-left: 45px;
 }
 .service-container .service-nav .tab li {
   display: inline-block;
@@ -75,4 +153,107 @@
 }
 .service-container .service-nav .tab li:hover {
   background: #424242;
+}
+.service-container .service-center {
+  width: 1200px;
+  margin: 20px auto ;
+  overflow: hidden;
+}
+.service-container .service-center h2 {
+  line-height: 85px;
+  font-size: 18px;
+  font-weight: 800;
+}
+.service-container .service-center .service-left {
+  width: 960px;
+  height: 100%;
+  float: left;
+  margin-bottom: 50px;
+}
+.service-container .service-center .service-left .service-tab {
+  height: 100%;
+  width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.service-container .service-center .service-left .service-tab .tab-item {
+  flex: 1;
+  width: 209px;
+  height: 300px;
+  border: 1px solid #eaeaea;
+  padding: 10px;
+  margin-right: 9px;
+  margin-bottom: 10px;
+  background: #fff;
+  cursor: pointer;
+}
+.service-container .service-center .service-left .service-tab .tab-item > img {
+  width: 210px;
+  height: 210px;
+}
+.service-container .service-center .service-left .service-tab .tab-item > p {
+  font-size: 12px;
+  color: #929292;
+  height: 26px;
+  line-height: 29px;
+  margin-top: 15px;
+}
+.service-container .service-center .service-left .service-tab .tab-item > p > b {
+  font-size: 16px;
+  font-weight: 700;
+  vertical-align: middle;
+}
+.service-container .service-center .service-left .service-tab .tab-item > p > img {
+  vertical-align: middle;
+}
+.service-container .service-center .service-left .service-tab .tab-item > p span {
+  float: right;
+}
+.service-container .service-center .service-left .service-tab .tab-item:hover {
+  box-shadow: 1px 0 15px #ccc;
+}
+.service-container .service-center .service-right {
+  float: right;
+  width: 230px;
+  margin-left: 0px;
+}
+.service-container .service-center .service-right > img {
+  display: block;
+  width: 230px;
+  height: 320px;
+  vertical-align: middle;
+  margin-left: -10px;
+}
+.service-container .service-center .service-right .erweima {
+  width: 230px;
+  background-image: url("../images2/tuijianfuwushang_06.jpg");
+  margin-top: 10px;
+  margin-left: -10px;
+  height: 300px;
+}
+.service-container .service-center .service-right .erweima img {
+  margin: 50px 0 0 50px;
+  width: 130px;
+}
+.service-container .service-center .more {
+  width: 100%;
+  text-align: center;
+  height: 152px;
+  clear: both;
+}
+.service-container .service-center .more .btn {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  margin: 50px 5px;
+  background: #fff;
+  display: inline-block;
+  font-size: 16px;
+  color: #b1b1b1;
+  cursor: pointer;
+}
+.service-container .service-center .more .btn img {
+  margin-left: 10px ;
 }

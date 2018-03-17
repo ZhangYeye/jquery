@@ -216,6 +216,7 @@ header .container .nav-right .nav .shanghu-login > a {
   position: relative;
   width: 100%;
   text-align: center;
+  margin-top: 50px;
 }
 .service-container .service .service-nav .service-title {
   display: block;
@@ -225,12 +226,16 @@ header .container .nav-right .nav .shanghu-login > a {
   font-family: "Microsoft YaHei";
 }
 .service-container .service .service-nav .service-type {
-  display: block;
+  display: inline-block;
   font-size: 22px;
   color: #3d3838;
   margin-top: 15px;
   text-align: center;
   font-family: "幼圆";
+  margin-right: 10px;
+}
+.service-container .service .service-nav .service-type a {
+  display: inline-block;
 }
 .service-container .service .service-nav .service-type > a:hover {
   color: #e94840 ;

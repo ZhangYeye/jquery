@@ -38,4 +38,15 @@ $(function(){
 
   })
 
+  // 点击导航
+  $('.nav .nav-list').click(function () {
+    $(this).mousedown(function () {
+      $('.nav-list').removeClass('active')
+      $(this).children().addClass('active')
+    })
+  })
+
+
+
+
 })
